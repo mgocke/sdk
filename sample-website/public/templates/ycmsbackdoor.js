@@ -1,3 +1,5 @@
+document.domain = "api.yaas.io"
+
 var injectJS = function(head, srcs, index) {
     var script = document.createElement('script');
     script.type = 'text/javascript';
