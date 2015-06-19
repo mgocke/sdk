@@ -145,25 +145,24 @@
                                                 By <a href="/catalog/reviewer.html?id={person._doc}">{person.title}</a>
                                             </p>
                                             <p>
-                                                {other.body|s}
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                {/queryOne}
+                                                {@queryOne type="custom:cmsparagraphcomponen0" field="_doc" fieldValue="ac2951db13e0a35f66ed" as="component"}
+                                            <div class="review">
+                                                <div class="media">
+                                                    <div class="pull-left media-left">
+                                                        <div style="text-align:center" data-cms-component="CMSParagraphComponent" data-cms-component-type="CMSParagraphComponent">
+                                                            <h1>{component.content}</h1>
+                                                        </div>
+                                                    </div>
 
-                                {@queryOne type="custom:cmsparagraphcomponen0" field="_doc" fieldValue="ac2951db13e0a35f66ed" as="component"}
-                                <div class="review">
-                                    <div class="media">
-                                        <div class="pull-left media-left">
-                                            <div style="text-align:center" data-cms-component="CMSParagraphComponent" data-cms-component-type="CMSParagraphComponent">
-                                                <h1>{component.content}</h1>
+                                                </div>
                                             </div>
+                                            {/queryOne}                                            </p>
                                         </div>
-
                                     </div>
                                 </div>
                                 {/queryOne}
+
+
 
                             </div>
                             {/rows}
