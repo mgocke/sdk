@@ -1,4 +1,4 @@
-document.domain = "api.yaas.io"
+document.domain = "yaas-content-api.cf3.hybris.com"
 
 var injectJS = function(head, srcs, index) {
     var script = document.createElement('script');
