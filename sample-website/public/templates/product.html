@@ -2,13 +2,6 @@
 
 {<content}
 
-{@queryOne type="custom:cmsparagraphcomponen0" field="_doc" fieldValue="fc7485d90022d2e7ae1c" as="component"}
-<section id="page">
-    <div>
-        <h1> TEST Paragraph Conent: {component.content}</h1>
-    </div>
-</section>
-{/queryOne}
 
 
 {@queryOne type="catalog:product" field="_doc" fieldValue="{request.qs.id}" as="product"}
@@ -25,6 +18,7 @@
         </div>
     </header>
     <section id="content" class="mt30 pb30">
+
         <div class="container">
             <div class="row">
 
@@ -155,6 +149,20 @@
                                     </div>
                                 </div>
                                 {/queryOne}
+
+                                {@queryOne type="custom:cmsparagraphcomponen0" field="_doc" fieldValue="ac2951db13e0a35f66ed" as="component"}
+                                <div class="review">
+                                    <div class="media">
+                                        <div class="pull-left media-left">
+                                            <div style="text-align:center">
+                                                <h1>{component.content}</h1>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                {/queryOne}
+
                             </div>
                             {/rows}
                             {/associations}
