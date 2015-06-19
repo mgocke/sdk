@@ -2,7 +2,7 @@
 
 {<content}
 
-{@queryOne type="CMSParagraphComponent" field="_doc" fieldValue="{request.qs.id}" as="component"}
+{@queryOne type="custom:cmsparagraphcomponen0" field="title" fieldValue="{request.qs.id}" as="component"}
 <section id="page">
     <div>
         <h1> TEST Paragraph Conent: {component.content}</h1>
